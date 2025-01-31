@@ -15,14 +15,17 @@ help:
 	@echo "      this message"
 	@echo "==== Targets outside container ===="
 	@echo ""
-	@echo "make up"
-	@echo "      build and run $(container)"
+	@echo "make container"
+	@echo "      build image and then enter container shell"
 	@echo ""
 	@echo "make container_build"
+	@echo "      build image"
 	@echo ""
 	@echo "make container_live"
+	@echo "      enter container shell"
 	@echo ""
-	@echo "make container"
+	@echo "make up"
+	@echo "      build and run $(container)"
 	@echo ""
 
 # create and start the webserver. This will build the Docker image if that's needed
@@ -33,10 +36,9 @@ up:
 		fi
 	$(container) ps
 	$(container) run --rm \
-                -v `pwd`:/scratch -w /scratch/ \
-                --user $$(id -u):$$(id -g) \
+                -w /code \
                 --expose 5000 -p 5000:5000 \
-                $(webserver_image) python3 /scratch/pdg_app.py
+                $(webserver_image) python3 pdg_app.py
 
 
 container: container_build container_live
