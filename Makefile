@@ -30,6 +30,7 @@ help:
 
 # create and start the webserver. This will build the Docker image if that's needed
 up:
+	if (! $(container) stats --no-stream ); then  open /Applications/Docker.app; while (! $(container) stats --no-stream ); do    echo "Waiting for Docker to launch...";  sleep 1; done; fi;
 	$(container) ps
 	if [ `$(container) ps | wc -l` -gt 1 ]; then \
 	       	$(container) kill $$($(container) ps -q); \
@@ -37,8 +38,10 @@ up:
 	$(container) ps
 	$(container) run --rm \
                 -w /code \
-                --expose 5000 -p 5000:5000 \
+                -p 5000:5000 \
                 $(webserver_image) python3 pdg_app.py
+
+#                --expose 5000 -p 5000:5000 \
 
 
 container: container_build container_live
