@@ -6,7 +6,7 @@ See <https://flask.palletsprojects.com/en/stable/>
 
 To use,
 ```bash
-make container
+make container_build
 make up
 ```
 
@@ -34,7 +34,6 @@ Next demos:
 cd allofphysicsgraph
 git clone git@github.com:allofphysicsgraph/pdg_essential_demo_flask_website.git
 cd pdg_essential_demo_flask_website
-make container
+make container_build
 make up
-
 ```
