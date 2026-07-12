@@ -10,7 +10,7 @@ make container_build
 make up
 ```
 
-In a browser, visit <http://localhost:5000> to see a static HTML page
+In a browser, visit <http://localhost:5000> to see a static HTML page. If you're on a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) then the HTML is displayed at your public IP address on port 5000. 
 
 
 # Guide
