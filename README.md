@@ -18,3 +18,15 @@ In a browser, visit <http://localhost:5000> to see a static HTML page
 This demo repo is part of a sequence of tutorials
 
 ![sequence of demos](https://raw.githubusercontent.com/allofphysicsgraph/pdg_essential_demo_docker/refs/heads/main/tutorials_dependency_graph.svg)
+
+
+# More details
+
+```
+cd allofphysicsgraph
+git clone git@github.com:allofphysicsgraph/pdg_essential_demo_flask_website.git
+cd pdg_essential_demo_flask_website
+make container
+make up
+
+```
