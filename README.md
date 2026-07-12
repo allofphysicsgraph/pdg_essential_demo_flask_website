@@ -1,4 +1,4 @@
-Prior to exploring this repo you should have reviewed <https://github.com/allofphysicsgraph/pdg_essential_demo_docker>. The `pdg_essential_demo_docker` has advice for setting up `git`, so this repo (`pdg_essential_demo_flask_website`) assumes you already have `git` and `docker` working.
+Prior to exploring this repo you should have reviewed <https://github.com/allofphysicsgraph/pdg_essential_demo_docker>. That repo has advice for setting up `git`, so this repo (`pdg_essential_demo_flask_website`) assumes you already have `git` and `docker` working.
 
 # Demo of Flask in Docker
 
