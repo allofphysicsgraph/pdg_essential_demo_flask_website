@@ -19,6 +19,14 @@ This demo repo is part of a sequence of tutorials
 
 ![sequence of demos](https://raw.githubusercontent.com/allofphysicsgraph/pdg_essential_demo_docker/refs/heads/main/tutorials_dependency_graph.svg)
 
+Previous demo:
+- <https://github.com/allofphysicsgraph/pdg_essential_demo_docker>
+
+Next demos:
+- <https://github.com/allofphysicsgraph/pdg_essential_demo_flask_gunicorn>
+- <https://github.com/allofphysicsgraph/pdg_essential_demo_jinja2>
+- <https://github.com/allofphysicsgraph/pdg_essential_demo_neo4j_and_flask>
+- <https://github.com/allofphysicsgraph/pdg_essential_demo_api>
 
 # More details
 
